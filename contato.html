@@ -4,75 +4,61 @@
     <meta charset="UTF-8">
     <title>Contato</title>
 
-    
+    <link rel="stylesheet" href="./estilo.css">
 </head>
-<body>
+<body class="conteudo">
     <header>
-        <section>
-            <img src="./img/logo.png" alt="Logo" height="50">
-            <nav class="menu">
-                <ul>
-                    <li><a href="./index.html">Inicío</a></li>
-                    <li><a href="./contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </section>
+        <img src="./img/logomarcadesucesso.png" alt="Logo marca de sucesso" height="50">
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Inicío</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
+    <main class="sobre">
+        <section class="linha">
             <article>
-                <h1>Formulario de Contato</h1>
-                <p>Preencha os campos a baixo para enviar sua mensagem de contato</p>
+                <h1>Contato</h1>
+                <br>
+                <h2>Landing Page</h2>
+                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <br>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <br>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                <br>
+            </article>
+            <article class="agrupamento">
+                <fieldset class="agrupamento">
+                    <legend>Dados para Contato</legend>
+                    <form class="agrupamento" action="contato.php" id="frmInscricao" method="post">
 
-                <fieldset>
-                    <legend>Dados de Contato</legend>
-                    <form action="contato.php" id="frmInscricao" method="post">
+                        <label  for="">Nome:</label><br>
+                        <input  class="entrada" type="text" required="required" id="txtNome" maxlength="100" size="50">
+                        
+                        <br><br> 
 
-                        <label for="">Nome:</label><br>
-                        <input type="text" required="required" id="txtNome" maxlength="100" size="50"><br><br>
+                        <label for="data">Data de Nascimento</label><br>
+                        <input type="date" name="data" id="data" class="entrada">
 
-                        <label for="">Sexo:</label><br>
-                        <input type="radio" name="rdoSexo" value="M"  required="required">
-                        <label for="rdoSexo">Masculino</label>
-                        <input type="radio" name="rdoSexo" value="F" required="required">
-                        <label for="rdoSexo">Feminino</label><br><br>
-
-                        <label for="">Endereço:</label>
-                        <input type="text" id="txtEndereco" required="required"> <br><br>
-
-                        <label for="">Estado:</label>
-                        <select name="" id="slcEstado" required="required">
-                            <option value="">--Selecione--</option>
-                            <option value="1">SC</option>
-                            <option value="4">SP</option>
-                            <option value="5">RS</option>
-                        </select><br><br>
-
-                        <label for="">Cidade:</label>
-                        <select name="" id="slcCidade" required="required">
-                            <option value="">--Selecione--</option>
-                            <option value="1">Santa Catarina</option>
-                            <option value="2">São Paulo</option>
-                            <option value="3">Rio Grande do Sul</option>
-                        </select><br><br>
+                        <br><br>
 
                         <label for="">Celular:</label>
-                        <input type="tel" id="nmrTel" placeholder="(##) # #### - ####" required="required"><br><br>
+                        <input class="entrada" type="tel" id="nmrTel" placeholder="(##) # #### - ####" required="required">
+                        
+                        <br><br>
 
                         <label for="">E-mail:</label>
-                        <input type="email" required="required" id="txtEmail" size="50"><br><br>
+                        <input class="entrada" type="email" required="required" id="txtEmail" size="50">
+                        
+                        <br><br>
 
-                        <label for="">Area de Interesse:</label><br>
-                        <input type="checkbox" value="JS" name="ckAreaDeInteresse">
-                        <label for="ckAreaDeInteresse">JavaScript</label>
-                        <input type="checkbox" value="HTML" name="ckAreaDeInteresse">
-                        <label for="ckAreaDeInteresse">HTML 5</label>
-                        <input type="checkbox" value="CSS" name="ckAreaDeInteresse">
-                        <label for="ckAreaDeInteresse">CSS 3</label><br><br>
+                        <textarea class="entrada" name="txtArea" id="txtArea" cols="30" rows="10"></textarea>
+                        
+                        <br> <br>
 
-                        <textarea name="txtArea" id="txtArea" cols="30" rows="10"></textarea><br> <br>
-
-                        <input type="submit" value="Enviar"><br>
+                        <input class="botao botao-destaque" type="submit" value="Enviar"><br>
                     </form>
                 </fieldset> 
             </article>
@@ -80,9 +66,9 @@
     </main>
     <footer>
         <ul>
-            <li><a href="./fakeinsta.html"><img src="img/logo-insta.png" alt="Instagram" height="40"></a></li>
-            <li><a href="./fakeface.html"><img src="./img/logo-facebook.png" alt="Facebook" height="40"></a></li>
-            <li><a href="./faketwt.html"><img src="./img/logo-twitter.png" alt="Twitter" height="40"></a></li>
+            <li><a href="./fakeinsta.html"><img src="./img/imginsta.jpg" alt="Instagram" height="40"></a></li>
+            <li><a href="./fakeface.html"><img src="./img/pngface.png" alt="Facebook" height="40"></a></li>
+            <li><a href="./faketwt.html"><img src="./img/pngtwt.png" alt="Twitter" height="40"></a></li>
         </ul>
     </footer>
 </body>
