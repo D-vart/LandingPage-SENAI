@@ -1,8 +1,6 @@
-/* Usado para importar regras de estilo de outras folhas de estilo.
+/* Usado para importar regras de estilo de outras folhas de estilo.*/
 
-@import”https://fonts.googleapis.com/
-css2?family=Source+Sans+Pro:wght@200;300;400&display=swap”; 
-*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap");
 
 * { /* Este seletor escolhe todos os elementos do documento e redefine
 todas as configurações do navegador. */
@@ -15,6 +13,7 @@ todas as configurações do navegador. */
     vertical-align: baseline;
     text-decoration: none;
     list-style: none;
+    
 }
 .conteudo {
     width: 1024px;
@@ -27,6 +26,7 @@ todas as configurações do navegador. */
     display: flex;
     flex-direction: row;
 }
+
 
 header section {
     justify-content: space-between;
